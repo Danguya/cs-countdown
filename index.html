@@ -6,25 +6,38 @@
   <title>Countdown CTF</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
+  <link href="./assets/favicon.png" rel="icon">
+  <style>
+    @font-face {
+        font-family: 'Technology';
+        src: url('./assets/fonts/Technology-BoldItalic.ttf') format('truetype'); /* Defina o caminho correto */
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    .font-technology {
+        font-family: 'Technology', monospace;
+    }
+</style>
 </head>
 <body class="flex items-center justify-center h-screen bg-black text-white select-none">
   <div class="flex flex-col items-center text-center transition-all duration-500">
     <div class="w-full max-w-[1216px] h-[200px] flex items-center p-8 rounded-[8px] bg-slate-950">
       <img src="./assets/cs-ctf.png" alt="Logo" class="w-[300px]">
-      <h1 class="text-4xl font-bold mb-6">Capture The Flag - Cybersecur 2024</h1>
+      <h1 class="text-4xl font-bold mb-6 font-custom">Capture The Flag - Cybersecur 2024</h1>
     </div>
 
-    <div id="countdown-container" class="flex justify-center space-x-8 font-mono scale-75 cursor-pointer">
-      <div>
-        <p id="hours" class="font-bold text-[200px]">00</p>
+    <div id="countdown-container" class="font-technology flex justify-center space-x-8 font-mono scale-75 cursor-pointer">
+      <div class=" min-w-[250px] flex items-center justify-center">
+        <p id="hours" class="font-bold text-[200px]  font-technology">00</p>
       </div>
-      <p class="font-bold text-[200px] text-slate-950">:</p>
-      <div>
-        <p id="minutes" class="font-bold text-[200px]">00</p>
+      <p class="font-bold text-[200px] text-slate-950 font-technology">:</p>
+      <div class=" min-w-[250px] flex items-center justify-center">
+        <p id="minutes" class="font-bold text-[200px] font-technology">00</p>
       </div>
-      <p class="font-bold text-[200px] text-slate-950">:</p>
-      <div>
-        <p id="seconds" class="font-bold text-[200px]">00</p>
+      <p class="font-bold text-[200px] text-slate-950 font-technology">:</p>
+      <div class=" min-w-[250px] flex items-center justify-center">
+        <p id="seconds" class="font-bold text-[200px] font-technology">00</p>
       </div>
     </div>
   </div>
